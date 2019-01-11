@@ -14,12 +14,9 @@ const port = 3000;
 (async () => {
     await sequelize.sync();
 
-
+    // active record
     const person = new Person({ birthday: new Date(), name: 'Mario', surname: 'Souto' })
     person.save()
-
-    // const query = Person.find()
-    // console.log(query)
 
     app.listen(port, () => {
         console.log(`Server up and running at ${port}`)
