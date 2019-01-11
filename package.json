@@ -1,0 +1,27 @@
+{
+  "name": "diglett",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@types/express": "^4.16.0",
+    "express": "^4.16.4",
+    "reflect-metadata": "^0.1.12",
+    "sequelize": "^4.37.5",
+    "sequelize-typescript": "^1.0.0-alpha.1"
+  },
+  "devDependencies": {
+    "sqlite3": "^4.0.4",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.12.1",
+    "typescript": "^3.2.2"
+  },
+  "scripts": {
+    "start:dev": "ts-node --project tsconfig.json src/index.ts",
+    "watch": "nodemon --watch src --ext ts --ignore '*.spec.ts' --exec npm run start:dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
