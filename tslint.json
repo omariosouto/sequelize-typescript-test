@@ -37,8 +37,8 @@
         "avoid-escape"
       ],
       "semicolon": [
-        false,
-        "always"
+        true,
+        "never"
       ],
       "typedef-whitespace": [
         true,
